@@ -1,0 +1,373 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f4;
+    font-family: "Source Serif 4", Georgia, serif;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.nav-bar  {
+    display: flex;
+}
+
+header .logo img {
+    height: 90px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: 550;
+    margin-right: 10px;
+}
+
+header ul li:hover {
+    opacity: 0.7;
+    padding: 0px;
+}   
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar div {
+    padding-left: 30px;
+    font-weight: 550;
+}
+
+.search-bar div:hover {
+    opacity: 0.7;
+}
+
+.search-bar input {
+    width: 12.5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 624999.9375rem;
+    padding: 0 1.5rem 0 3rem;
+    font-size: 0.875rem;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.search-bar input:hover {
+    border: 3px solid rgba(232, 180, 184, 0.3);
+    
+}
+
+.sign-up {
+    width: 100.92px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sign-up:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sign-in {
+    margin-right: 13px;
+    margin-top: 14px;
+}
+
+
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    width: 1100px;
+    height: 152px;
+    margin: 40px 177.7px 24px;
+    margin-bottom: 20px;
+    font-size: 62px;
+    font-weight: 400;
+    font-family: "Source Serif 4", Georgia, serif;
+}
+
+.hero p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+/* Main Body */
+main {
+    padding: 20px;
+}
+
+.main-body h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+}
+.post-list .post {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 36px;
+}
+
+.post-list .post img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btns {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+
+}
+
+.btns div {
+    width: 40px;
+    height: 40px;
+}
+
+.btns div {
+    background-color: white;
+    margin: 5px;
+    border-radius: 50%;
+    justify-content: center;
+    position: relative;
+}
+
+.btns div i {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+}
+
+/* -------------------------------------------------------------- */
+.btn p {
+    
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    height: 13px;
+}
+
+.hid-text2 {
+    display: flex;
+    position: absolute;
+    bottom: -26px;
+    right: -67px;
+    opacity: 0;
+}
+
+.hid-text1 {
+    display: flex;
+    position: absolute;
+    width: 71px;
+    bottom: -26px;
+    right: -65px;
+    opacity: 0;
+    z-index: 1;
+}
+.post-list .post:hover .btns {
+    opacity: 1;
+}
+.post-list .post:hover .btns {
+    opacity: 1;
+}
+
+.btns .btn1:hover .hid-text1 {
+    opacity: 1;
+}
+
+.btns .btn2:hover .hid-text2 {
+    opacity: 1;
+}
+
+/* ------------------------------------------------ */
+
+.btns div:hover i {
+    opacity: 0.4;
+}
+
+.btns div:hover  i {
+    opacity: 0.4;
+}
+
+.post .user-details img {
+    width: 25px;
+    height: 25px;
+}
+
+.post .user-details p {
+    color: black;
+    margin: 8px;
+}
+
+.post .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 150px;
+}
+.footer1 {
+    display: flex;
+    padding: 0 60px;
+}
+
+.footer1 a:hover {
+    opacity: 0.7;
+}
+
+.footer1 .logo img {
+    width: 200px;
+}
+
+.social-links {
+    position: absolute;
+    right: 80px;
+
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+
+}
+footer div ul {
+    display: flex;
+    
+}
+.social-links ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.social-links ul li:hover {
+    opacity: 1;
+    font-size: 27px;
+}
+
+footer .logo {
+    margin-right: 100px;
+}
+
+footer a {
+    margin-right: 50px;
+}
+
+footer .quick-links a {
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.quick-links li {
+    opacity: 0.6;
+}
+
+.quick-links li:hover {
+    opacity: 1;
+}
+
+
+
+.footer2 {
+    margin-top: 60px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.quick-links ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.newsletter {
+    margin-left: 290px;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 15px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 17px;
+}
+
+footer .newsletter input:hover {
+    border: 2px solid rgb(133, 213, 209, 0.5);
+}
+
+footer .newsletter button {
+    padding: 13px 18px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer .newsletter button:hover {
+    opacity: 0.9;
+}
+

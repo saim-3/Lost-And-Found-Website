@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Item</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f7f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+             background-color: #f4f4f4;
+            padding: 10px 20px;
+             display: flex;
+            justify-content: space-between;
+             align-items: center;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-bar ul li {
+            margin-left: 20px;
+        }
+
+        .nav-bar ul li a {
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo img {
+            height: 90px;
+        }
+
+        .container {
+            max-width: 800px;
+             margin: 0 auto;
+              padding: 40px;
+            background-color: rgba(155, 143, 143, 0.5);
+            border-radius: 10px;
+              box-shadow: 0 0 10px rgba(67, 73, 49, 0.1);
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+              font-size: 35px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            padding: 15px;
+             background-color: black;
+             color: white;
+            border: none;
+             border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Images/Lost.png" alt="Lost and Found Logo">
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+              <li><a href="#">Post an Item</a></li>
+                <li><a href="#">Find an Item</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Post a Lost/Found Item</h1>
+         <form action="submit-item" method="post">
+            <br>
+              <label for="item-type">Item Type</label>
+                <select name="item-type" id="item-type">
+                 <option value="lost">Lost</option>
+                    <option value="found">Found</option>
+                </select> <br>
+
+                      <label for="title">Item Title</label>
+
+                     <input type="text" id="title" name="title" placeholder="Enter the item name">
+
+                   <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Add detais about item"></textarea>
+
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image">
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Where was the item lost/found?">
+                   <br>
+                <label for="contact">Your Contact Information</label>
+                <input type="email" id="contact" name="contact" placeholder="Enter your email address">
+
+                <input type="submit" value="Post Item">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
