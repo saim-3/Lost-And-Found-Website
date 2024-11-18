@@ -14,15 +14,15 @@
 <body>
     <header>
         <div class="nav-bar">
+            <div class="logo"><img src="./Images/Lost.png" alt=""></div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="postitem.html">Post an Item</a></li>
-                <li><a href="#">Find an Item</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home
+                    </a></li>
+                <li><a href="postitem.html">Post Item</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class="logo"><img src="./Images/Lost.png" alt=""></div>
+
         <div class="search-bar">
             <input type="text" placeholder="Search...">
             <div class="sign-in">Sign in</div>
@@ -30,72 +30,67 @@
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Contact Us</h1>
-        <p>We're here to help you find what matters most. Reach out to us with any questions or concerns.</p>
-    </section>
-
-    <main>
-        <section class="contact-section">
-            <h2>Get in Touch</h2>
+    <div class="contact-page">
+        <div class="contact-head">
+            <p>We're here to help you find what matters most. Reach out to us with any questions or concerns.</p>
+        </div>
+        <div class=" contact-form">
+            <h2>Contact Us</h2>
             <form action="#" method="post">
-                <div class="form-group">
+                <div class="form-grp">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" >
-                </div> 
-                <br>
-                <div class="form-group">
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-grp">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
-                </div> 
-                <br>
+                </div>
 
-                <div class="form-group">
+                <div class="form-grp">
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" required>
                 </div>
-                <br>
-                <div class="form-group">
+                <div class="form-grp">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <br>
-                <button type="submit">Send Message</button>
+                <button type="submit">Submit</button>
             </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer1">
-            <div class="logo"><img src="./Images/Lost.png" alt=""></div>
-            <a href="">Blog</a>
-            <a href="">About</a>
-            <a href="">Support</a>
-            <div class="social-links">
-                <ul>
-                    <li><i class="fa-brands fa-x-twitter"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
-            </div>
         </div>
+    </div>
 
-        <div class="footer2">
-            <div class="quick-links">
-                <ul>
-                    <li>© 2024 Lost & Found </li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Cookies</a></li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <input type="email" placeholder="Subscribe to our newsletter">
-                <button>Subscribe</button>
-            </div>
-        </div>
-    </footer>
+
+            <footer>
+                <div class="footer1">
+                    <div class="logo"><img src="./Images/Lost.png" alt=""></div>
+                    <a href="">Blog</a>
+                    <a href="">About</a>
+                    <a href="">Support</a>
+                    <div class="social-links">
+                        <ul>
+                            <li><i class="fa-brands fa-x-twitter"></i></li>
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-pinterest"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer2">
+                    <div class="quick-links">
+                        <ul>
+                            <li>© 2024 Lost & Found </li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Subscribe to our newsletter">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </footer>
 </body>
 
 </html>

@@ -9,14 +9,13 @@ body {
 
 header {
     background-color: #f4f4f4;
+    /* background-color: #f0f0f0; */
     color: black;
-    padding: 10px 20px;
+    padding: 13px 20px 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 .nav-bar  {
@@ -36,7 +35,7 @@ header ul {
 
 header ul li {
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 40px;
     font-weight: 550;
     margin-right: 10px;
 }
@@ -50,6 +49,73 @@ header ul li a {
     color: black;
     text-decoration: none;
 }
+
+/* dropdown */
+
+/* Hide default select box */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Style the visible category text */
+.dropdown-text {
+    width:70px;
+    padding: 0 0 10px 0;
+    margin-right: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    display: flex;
+}
+.dropdown-text i {
+    margin-left: 5px;
+    margin-top: 1.5px;
+}
+
+/* Hide the dropdown options initially */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 135px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 5px;
+}
+
+/* Show dropdown options when hovering over the container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Style each dropdown item */
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    color: black;
+    display: block;
+    font-size: 16px;
+}
+
+/* Change color when hovering over a dropdown item */
+.dropdown-content a:hover {
+    background-color: #d9e8ff;
+}
+
+
+/* dropdown */
 
 .search-bar {
     display: flex;
@@ -95,9 +161,18 @@ header ul li a {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.sign-in {
+.sign-in  {
     margin-right: 13px;
     margin-top: 14px;
+}
+.sign-in a  {
+    text-decoration: none;
+    color: black; 
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -247,7 +322,16 @@ main {
 .post .user-details p {
     color: black;
     margin: 8px;
+    text-decoration: none;
 }
+
+.post  a {
+    text-decoration: none;
+}
+.post  a:hover {
+    text-decoration: underline;
+}
+
 
 .post .user-details {
     display: flex;
@@ -371,3 +455,356 @@ footer .newsletter button:hover {
     opacity: 0.9;
 }
 
+
+
+
+/* Post items css */
+.container {
+    margin: 20px 300px 0 300px;
+    height:500px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+
+.container-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+
+
+.container .input-box {
+    height: 180px;
+    width: 398px;
+    background-color: #e7f3ff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    
+}
+
+.container button {
+    height: 42px;
+    width: 135px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #3d92ed;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.container button:hover {
+    background-color: #0474ec;
+}
+
+.container .input-box:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: #e9f5ff;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.post-details {
+    padding-top: 10px;
+    display: none;
+}
+.post-details h1 {
+    text-align: center;
+}
+
+.post-details .form-grp {
+    margin-bottom: 15px;
+}
+
+.post-details label {
+    display: block;
+    font-weight: bold;
+}
+.post-details
+input[type="text"],
+ input[type="date"],
+.post-details textarea,
+.post-details select {
+    width: 500px;
+    height: 50px;
+    padding: 13px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.post-details textarea {
+    margin-bottom: 7px;
+}
+
+.post-details
+input[type="text"],
+.post-details input[type="date"] {
+    width: 530px;
+}
+
+
+.post-details select {
+    width: 525px;
+}
+
+.post-details form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* item css */
+.item-page-nav {
+    margin-bottom: 20px;
+}
+
+.item-page-nav p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.item-page-nav nav {
+    margin-left: 10px;
+}
+
+.item-page-nav nav a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.item-page-nav nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*  */
+
+.item-page {
+    padding: 30px 90px;
+    display: flex;
+}
+.item-page img{
+    width: 485px;
+    height: 600px;
+    object-fit: cover;
+    margin-right: 70px;
+}
+
+
+
+.item-info {
+    flex: 1; 
+}
+
+.item-info h2 {
+    margin-bottom: 10px;
+    color: #3d92ed;
+}
+
+.item-info p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.item-info .claim-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3d92ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item-info .claim-btn:hover {
+    background-color: #0474ec;
+}
+
+/* contact css */
+
+.contact-head {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.contact-form {
+    margin: 20px 350px 0 350px;
+    height:700px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px 100px;
+    
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.contact-form form .form-grp label  {
+    display: block;
+    margin: 25px 0 12px 0;
+}
+
+.form-grp input,
+.form-grp textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    margin-top: 50px ;
+    margin-left: 250px;
+    width: 180px;
+    height: 48px;
+    background-color: #0a1551;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #3e4fae;
+}
+
+
+/* sign-in-css */
+.sign-in-pg {
+    display: flex;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sign-page-img img {
+    width: 500px;
+    height: 100vh;
+}
+
+.sign-in-page {
+    padding: 70px 105px;
+}
+
+.sign-in-page p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Spacing between lines and text */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.sign-in-page p::after, .sign-in-page p::before {
+    content: '';
+    flex: 1; /* Makes the lines stretch */
+    height: 0.1px;
+    background-color: #ab9c9c; /* Line color */
+}
+
+.sign-in-page input, .sign-in-page button {
+    width: 462px;
+    height: 62px;
+    border: 2px solid rgba(211, 211, 211, 0.7);
+    border-radius: 12px;
+}
+
+
+.sign-in-page button {
+    width: 499px;
+    border-radius: 30px;
+    background-color: white;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.sign-in-page button i {
+    margin-right: 20px;
+}
+
+.sign-in-page input, .sign-in-page label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.sign-in-page button, .sign-in-page label {
+    margin-top: 30px;
+}
+
+.sign-in-page input{
+    padding: 0 20px;
+    outline: none;
+}
+.sign-in-page input:hover{
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.4);
+    border: 2px solid rgba(255, 105, 180, 0.5);
+}
+
+.sign-in-page label{
+    font-weight: bold;
+}
+.sign-in-page .btn {
+    background-color: black;
+    color: white;
+    padding: 0 24px;
+    border: none;
+}
+
+.sign-in-page .btn:hover {
+    background-color: rgb(86, 85, 85);
+}
+
+/* /.sign-in-css */
+
+/* /.sign-up-css */
+.sign-in-pg .icon i {
+    width: 26px;
+    height: 30px;
+    border: 2px solid rgb(136, 134, 134);
+    margin: 50px 0 0 50px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-left: 14px;
+}
+
+.sign-in-pg .icon i:hover {
+    background-color: white;
+    border: 2px solid rgb(196, 193, 193);
+}
+.sign-in-page .name {
+    display: flex;
+}
+.sign-in-page .name label {
+    display: block;
+}
+.sign-in-page .name input{
+    width: 200px;
+    margin-right: 20px; 
+}
