@@ -16,18 +16,27 @@
         <div class="nav-bar">
             <div class="logo"><img src="./Images/Lost.png" alt=""></div>
             <ul>
-                <li><a href="index.html">Home
+                <li>
+                        <div class="dropdown">
+                            <div class="dropdown-text">Category <i class="fa-solid fa-angle-down"></i></div>
+                            <div class="dropdown-content">
+                                <a href="#" data-value="electronics">Electronics</a>
+                                <a href="#" data-value="accessories">Accessories</a>
+                                <a href="#" data-value="documents">Documents</a>
+                            </div>
+                        </div>
+
                     </a></li>
                 <li><a href="postitem.html">Post Item</a></li>
-                <li><a href="about.html">About</a></li> 
+                <!-- <li><a href="about.html">About</a></li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        
+
         <div class="search-bar">
             <input type="text" placeholder="Search...">
-            <div class="sign-in">Sign in</div>
-            <button class="sign-up">Sign Up</button>
+            <div class="sign-in"><a href="signin.html">Sign in</a></div>
+            <button class="sign-up" onclick="document.querySelector('.sign-up a').click()"><a href="signup.html">Sign Up</a></button>
         </div>
     </header>
 
@@ -47,132 +56,164 @@
             <div class="post-list">
 
                 <div class="post">
-                    <img src="./Images/img2.avif" alt="">
+                    <a href="item1.html"><img src="./Images/img2.avif" alt=""></a>
                     <div class="btns">
+                        <a href="item1.html"></a>
                         <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
                             <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        </div></a>
+                        <a href="item1.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item1.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
-                        <p>Shayan Mughal</p>
-                    </div>
+                        <p>Shayan</p>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img3.avif" alt="">
+                    <a href="item2.html"><img src="./Images/img3.avif" alt=""></a>
                     <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        <a href="item2.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item2.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item2.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
-                        <p>Shayan Mughal</p>
-                    </div>
+                        <p>Ahmed</p>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img4.webp" alt="">
+                    <a href="item3.html"><img src="./Images/img4.webp" alt=""></a>
                     <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        <a href="item3.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item4.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item3.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
-                        <p>Shayan Mughal</p>
-                    </div>
+                        <p>Arslan</p>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img5.webp" alt="">
+                    <a href="item4.html"><img src="./Images/img5.webp" alt=""></a>
                     <div class="btns">
+                        <a href="item4.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item4.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="item4.html" class="user-details">
+                        <img src="./Images/man.jpg" alt="">
+                        <p>Usama</p>
+                    </a>
+                </div>
+
+                <div class="post">
+                    <a href="item1.html"><img src="./Images/img2.avif" alt=""></a>
+                    <div class="btns">
+                        <a href="item1.html"></a>
                         <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
                             <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        </div></a>
+                        <a href="item1.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item1.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
-                        <p>Shayan Mughal</p>
-                    </div>
+                        <p>Shayan</p>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img2.avif" alt="">
+                    <a href="item2.html"><img src="./Images/img3.avif" alt=""></a>
                     <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        <a href="item2.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item2.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item2.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
                         <p>Shayan Mughal</p>
-                    </div>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img3.avif" alt="">
+                    <a href="item3.html"><img src="./Images/img4.webp" alt=""></a>
                     <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        <a href="item3.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item4.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item3.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
                         <p>Shayan Mughal</p>
-                    </div>
+                    </a>
                 </div>
                 <div class="post">
-                    <img src="./Images/img4.webp" alt="">
+                    <a href="item4.html"><img src="./Images/img5.webp" alt=""></a>
                     <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
+                        <a href="item4.html">
+                            <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
+                                <p class="hid-text1">View Details</p>
+                            </div>
+                        </a>
+                        <a href="item4.html">
+                            <div class="btn btn2"><i class="fa-solid fa-user"></i>
+                                <p class="hid-text2">Contact User</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="user-details">
+                    <a href="item4.html" class="user-details">
                         <img src="./Images/man.jpg" alt="">
                         <p>Shayan Mughal</p>
-                    </div>
+                    </a>
                 </div>
-                <div class="post">
-                    <img src="./Images/img5.webp" alt="">
-                    <div class="btns">
-                        <div class=" btn btn1"><i class="fa-solid fa-eye"></i>
-                            <p class="hid-text1">View Details</p>
-                        </div>
-                        <div class="btn btn2"><i class="fa-solid fa-user"></i>
-                            <p class="hid-text2">Contact User</p>
-                        </div>
-                    </div>
-                    <div class="user-details">
-                        <img src="./Images/man.jpg" alt="">
-                        <p>Shayan Mughal</p>
-                    </div>
-                </div>
-                
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
+
+
             </div>
             </div>
         </section>
