@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><img src="./Images/Lost.png" alt=""></div>
+            <ul>
+                <li><a href="index.html">Home
+                    </a></li>
+                <li><a href="postitem.html">Post Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <div class="sign-in">Sign in</div>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+
+            <div class="container-box">
+                <h1>Upload Image</h1>
+                <div class="input-box" onclick="document.getElementById('fileInput').click()">
+                    <i class="fa-solid fa-cloud-arrow-up fa-4x"></i>
+                    <p>Drop file here or click to upload</p>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                <button onclick="func()">Next</button>
+            </div>
+
+            <div class="post-details">
+                <h1>Provide details of the Item</h1>
+                <form action="">
+                    <div class="form-grp">
+                        <select name="item-type" id="item-type">
+                            <option value=""> Select Item Type</option>
+                            <option value="found-item">Found Item</option>
+                            <option value="lost-item">Lost Item</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="text" id="item-name" name="item-name" placeholder="Item Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="item-descroption" name="item-descroption" placeholder="Describe the item in detail"></textarea>
+                    </div>
+
+                    <div class="form-grp">
+                        <input type="text" id="item-location" name="item-nalocationme" placeholder="Item Location" required>
+                    </div>
+
+                    <div class="form-grp">
+                        <select id="contact-method" name="contact-method">
+                            <option value="email">Preferred Contact Method</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="website">Website Messaging</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="additional-comments" name="additional-comments" placeholder="Any Additional Details"></textarea>
+                    </div>
+                    
+
+                    <button type="submit">Post Item</button>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <div class="logo"><img src="./Images/Lost.png" alt=""></div>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <div class="social-links">
+                <ul>
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="quick-links">
+                <ul>
+                    <li>&#169; 2024 Lost & Found </li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Subscribe to our newsletter">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
